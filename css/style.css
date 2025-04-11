@@ -1,0 +1,244 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1em;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+#produtos h2,
+#detalhes-produto h2,
+#carrinho h2,
+#checkout h2,
+#pedido-confirmado h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.lista-produtos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.produto {
+    background-color: white;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.produto img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.produto h3 {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.produto p {
+    margin-bottom: 10px;
+}
+
+.produto button {
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.produto button:hover {
+    background-color: #4cae4c;
+}
+
+#detalhes-produto {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.detalhes-container {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.detalhes-container img {
+    max-width: 300px;
+    height: auto;
+}
+
+.info-produto-detalhe h3 {
+    margin-top: 0;
+}
+
+#adicionar-ao-carrinho-detalhe,
+#voltar-para-produtos {
+    margin-top: 10px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+}
+
+#adicionar-ao-carrinho-detalhe {
+    background-color: #007bff;
+    color: white;
+}
+
+#adicionar-ao-carrinho-detalhe:hover {
+    background-color: #0056b3;
+}
+
+#voltar-para-produtos {
+    background-color: #6c757d;
+    color: white;
+}
+
+#voltar-para-produtos:hover {
+    background-color: #545b62;
+}
+
+#carrinho,
+#checkout,
+#pedido-confirmado {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#itens-carrinho {
+    margin-bottom: 20px;
+}
+
+.item-carrinho {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.item-carrinho img {
+    max-width: 80px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.item-carrinho .info-item {
+    flex-grow: 1;
+}
+
+.item-carrinho .acoes-item button {
+    background: none;
+    border: none;
+    color: #dc3545;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+#total-carrinho {
+    text-align: right;
+    margin-bottom: 15px;
+}
+
+#finalizar-compra,
+#continuar-comprando,
+#voltar-para-carrinho,
+#voltar-para-home,
+#formulario-checkout button[type="submit"] {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+}
+
+#finalizar-compra:hover,
+#continuar-comprando:hover,
+#voltar-para-carrinho:hover,
+#voltar-para-home:hover,
+#formulario-checkout button[type="submit"]:hover {
+    background-color: #1e7e34;
+}
+
+#voltar-para-carrinho,
+#voltar-para-home {
+    background-color: #6c757d;
+}
+
+#voltar-para-carrinho:hover,
+#voltar-para-home:hover {
+    background-color: #545b62;
+}
+
+#formulario-checkout label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#formulario-checkout input[type="text"],
+#formulario-checkout input[type="email"],
+#formulario-checkout select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+footer {
+    text-align: center;
+    padding: 1em 0;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.oculto {
+    display: none;
+}

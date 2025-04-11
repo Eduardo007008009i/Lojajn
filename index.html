@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja de Celulares Avançada</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Jannaina Neves</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Produtos</a></li>
+                <li><a href="#">Sobre Nós</a></li>
+                <li><a href="#">Contato</a></li>
+                <li>
+                    <a href="#" id="carrinho-link">
+                        Carrinho (<span id="carrinho-quantidade">0</span>)
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="produtos">
+            <h2>Nossos Produtos</h2>
+            <div class="lista-produtos">
+                </div>
+        </section>
+
+        <section id="detalhes-produto" class="oculto">
+            <h2>Detalhes do Produto</h2>
+            <div class="detalhes-container">
+                <img id="produto-imagem-detalhe" src="" alt="">
+                <div class="info-produto-detalhe">
+                    <h3 id="produto-nome-detalhe"></h3>
+                    <p id="produto-preco-detalhe"></p>
+                    <p id="produto-descricao-detalhe"></p>
+                    <button id="adicionar-ao-carrinho-detalhe" data-id="">Adicionar ao Carrinho</button>
+                    <button id="voltar-para-produtos">Voltar para Produtos</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="carrinho" class="oculto">
+            <h2>Seu Carrinho de Compras</h2>
+            <div id="itens-carrinho">
+                </div>
+            <div id="total-carrinho">
+                <strong>Total: R$ <span id="valor-total">0.00</span></strong>
+            </div>
+            <button id="finalizar-compra">Finalizar Compra</button>
+            <button id="continuar-comprando">Continuar Comprando</button>
+        </section>
+
+        <section id="checkout" class="oculto">
+            <h2>Finalizar Compra</h2>
+            <form id="formulario-checkout">
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+
+                <label for="endereco">Endereço:</label>
+                <input type="text" id="endereco" required>
+
+                <label for="cidade">Cidade:</label>
+                <input type="text" id="cidade" required>
+
+                <label for="estado">Estado:</label>
+                <input type="text" id="estado" required>
+
+                <label for="cep">CEP:</label>
+                <input type="text" id="cep" required>
+
+                <label for="pagamento">Forma de Pagamento:</label>
+                <select id="pagamento">
+                    <option value="cartao">Cartão de Crédito</option>
+                    <option value="boleto">Boleto Bancário</option>
+                    <option value="pix">Pix</option>
+                </select>
+
+                <button type="submit">Confirmar Pedido</button>
+                <button type="button" id="voltar-para-carrinho">Voltar para o Carrinho</button>
+            </form>
+        </section>
+
+        <section id="pedido-confirmado" class="oculto">
+            <h2>Pedido Confirmado!</h2>
+            <p>Obrigado por sua compra!</p>
+            <p>Em breve você receberá mais informações sobre o seu pedido.</p>
+            <button id="voltar-para-home">Voltar para a Home</button>
+        </section>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
