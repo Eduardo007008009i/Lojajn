@@ -233,7 +233,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const pagamento = document.getElementById('pagamento').value;
 
         // Número de telefone da vendedora (adicione o número real aqui)
-        const numeroVendedora = '+55649981319697'; // Substitua pelo número real
+        const numeroVendedora = '+5564981319697'; // Substitua pelo número real
 
         // Construindo a mensagem formatada
         let mensagem = `Novo pedido:\n\n`;
