@@ -10,6 +10,33 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
+.search-container {
+    display: flex;
+    align-items: center;
+    margin-top: 10px; /* Adjust as needed */
+    padding: 0 15px; /* Add some padding */
+}
+
+#searchInput {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    flex-grow: 1;
+}
+
+#searchButton {
+    padding: 8px 12px;
+    background-color: #007bff; /* Or your preferred color */
+    color: white;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+#searchButton:hover {
+    background-color: #0056b3;
+}
+
 .oculto {
     display: none;
 }
