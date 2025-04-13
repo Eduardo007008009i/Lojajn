@@ -7,14 +7,45 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <h1>Jannaina Neves</h1>
+    <section id="home" class="home-professional">
+        <div class="hero-section">
+            <div class="hero-content">
+                <h1>Descubra um Mundo de Elegância e Bem-Estar</h1>
+                <p class="hero-subtitle">Perfumes importados exclusivos, produtos capilares de alta performance e nutracêuticos para uma vida saudável.</p>
+                <a href="#categories" class="explore-button">Explore Nossas Categorias</a>
+            </div>
+        </div>
+        <section id="categories" class="category-section">
+            <h2>Nossas Principais Categorias</h2>
+            <div class="category-links-professional">
+                <a href="#" id="go-masculino" class="category-card">
+                    <img src="imagens/perfumehomem.jpeg" alt="Perfumes Masculinos">
+                    <span>Perfumes Masculinos</span>
+                </a>
+                <a href="#" id="go-feminino" class="category-card">
+                    <img src="imagens/perfumemulher.webp" alt="Perfumes Femininos">
+                    <span>Perfumes Femininos</span>
+                </a>
+                <a href="#" id="go-capilar" class="category-card">
+                    <img src="imagens/capilares.jpeg" alt="Produtos Capilares">
+                    <span>Produtos Capilares</span>
+                </a>
+                <a href="#" id="go-nutraceutico" class="category-card">
+                    <img src="imagens/nutraceuticos.jpeg" alt="Produtos Nutracêuticos">
+                    <span>Produtos Nutracêuticos</span>
+                </a>
+            </div>
+        </section>
+    </section>
+
+    <header class="oculto">
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Produtos</a></li>
-                <li><a href="#">Sobre Nós</a></li>
-                <li><a href="#">Contato</a></li>
+                <li><a href="#" id="home-link-header">Home</a></li>
+                <li><a href="#" id="produtos-masculinos-link">Perfumes Masculinos</a></li>
+                <li><a href="#" id="produtos-femininos-link">Perfumes Femininos</a></li>
+                <li><a href="#" id="produtos-capilares-link">Produtos Capilares</a></li>
+                <li><a href="#" id="produtos-nutraceuticos-link">Produtos Nutracêuticos</a></li>
                 <li>
                     <a href="#" id="carrinho-link">
                         Carrinho (<span id="carrinho-quantidade">0</span>)
@@ -25,10 +56,28 @@
     </header>
 
     <main>
-        <section id="produtos">
-            <h2>Nossos Produtos</h2>
-            <div class="lista-produtos">
-                </div>
+        <section id="produtos-masculinos" class="oculto">
+            <h2>Perfumes Masculinos</h2>
+            <div class="lista-produtos-masculinos">
+            </div>
+        </section>
+
+        <section id="produtos-femininos" class="oculto">
+            <h2>Perfumes Femininos</h2>
+            <div class="lista-produtos-femininos">
+            </div>
+        </section>
+
+        <section id="produtos-capilares" class="oculto">
+            <h2>Produtos Capilares</h2>
+            <div class="lista-produtos-capilares">
+            </div>
+        </section>
+
+        <section id="produtos-nutraceuticos" class="oculto">
+            <h2>Produtos Nutracêuticos</h2>
+            <div class="lista-produtos-nutraceuticos">
+            </div>
         </section>
 
         <section id="detalhes-produto" class="oculto">
@@ -48,7 +97,7 @@
         <section id="carrinho" class="oculto">
             <h2>Seu Carrinho de Compras</h2>
             <div id="itens-carrinho">
-                </div>
+            </div>
             <div id="total-carrinho">
                 <strong>Total: R$ <span id="valor-total">0.00</span></strong>
             </div>
