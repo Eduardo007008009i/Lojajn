@@ -111,8 +111,6 @@ header {
     background-color: #343a40;
     color: #ffffff;
     padding: 1em 0;
-    z-index: 100;
-    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -469,6 +467,11 @@ main {
 
 /* Estilos para Telas Menores (Celulares) */
 @media (max-width: 768px) {
+    main {
+        padding-top: calc(60px + 20px); /* Adiciona altura do header + margem extra */
+        padding-bottom: 30px;
+    }
+
     .home-professional {
         padding: 40px 15px;
     }
@@ -520,7 +523,11 @@ main {
     }
 
     header {
-        padding: 0.8em 0;
+        padding: 1em 0;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 100; /* Garante que o header esteja acima do conteúdo */
     }
 
     nav ul li {
@@ -530,11 +537,6 @@ main {
 
     nav a {
         font-size: 0.95em;
-    }
-
-    main {
-        padding-top: 50px;
-        padding-bottom: 30px;
     }
 
     #produtos-masculinos h2,

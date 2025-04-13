@@ -467,13 +467,13 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    voltarParaProdutosBtn.addEventListener('click', () => {
+    voltarParaProdutosBtn.addEventListener('click',  (e) => {
         homeSection.classList.add('oculto');
         headerSection.classList.remove('oculto');
         produtosMasculinosSection.classList.remove('oculto');
-        produtosFemininosSection.classList.remove('oculto');
-        produtosCapilaresSection.classList.remove('oculto');
-        produtosNutraceuticosSection.classList.remove('oculto');
+        produtosFemininosSection.classList.add('oculto');
+        produtosCapilaresSection.classList.add('oculto');
+        produtosNutraceuticosSection.classList.add('oculto');
         detalhesProdutoSection.classList.add('oculto');
         carrinhoSection.classList.add('oculto');
         checkoutSection.classList.add('oculto');
